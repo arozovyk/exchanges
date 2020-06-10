@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa6dfe44-4d50-4b31-a0d2-0d5e49e15245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java/Listeners/ExchangeRateFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/Listeners/FetchRates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/entity/ReponseForum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/service/ExchangeGestionnaire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/service/UserAccountGestionnaire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/artifacts/ServletSample_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/artifacts/ServletSample_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ServletSample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ServletSample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../fileke" beforeDir="false" afterPath="$PROJECT_DIR$/../../../fileke" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/service/FirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/service/FirstServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/service/ForumGestionnaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/service/ForumGestionnaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/ServletSample/WEB-INF/classes/service/FirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/ServletSample/WEB-INF/classes/service/FirstServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/ServletSample/WEB-INF/classes/service/ForumGestionnaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/ServletSample/WEB-INF/classes/service/ForumGestionnaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/ServletSample/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/ServletSample/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/service/FirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/service/FirstServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/service/ForumGestionnaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/service/ForumGestionnaire.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1d7VbHwg1VKbI2UtXTdMgkMSoG6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../HibernateExpl" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa6dfe44-4d50-4b31-a0d2-0d5e49e15245" name="Default Changelist" comment="" />
+      <created>1591776187854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591776187854</updated>
+      <workItem from="1591776189165" duration="35000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2988" y="478" width="424" height="491" key="FileChooserDialogImpl" timestamp="1591776223178">
+      <screen x="2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2988" y="478" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1413/2560.0.2560.1440@2560.0.2560.1440" timestamp="1591776223178" />
+  </component>
+</project>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="2.5"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+<display-name>Sample Servlet Example</display-name>
+
+    <listener>
+        <listener-class>
+            Listeners.ExchangeRateFetcher
+        </listener-class>
+    </listener>
+    <filter>
+        <filter-name>filterAllow</filter-name>
+        <filter-class>filters.FilterAllow</filter-class>
+    </filter>
+
+
+    <filter-mapping>
+        <filter-name>filterAllow</filter-name>
+		<servlet-name>ForumGest</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>filterAllow</filter-name>
+		<servlet-name>UserManagement</servlet-name>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>filterAllow</filter-name>
+		<servlet-name>Exchanges</servlet-name>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>UserManagement</servlet-name>
+        <servlet-class>service.UserAccountGestionnaire</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+
+
+
+
+    <servlet>
+        <servlet-name>ForumGest</servlet-name>
+        <servlet-class>service.ForumGestionnaire</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+    <servlet>
+        <servlet-name>Exchanges</servlet-name>
+        <servlet-class>service.ExchangeGestionnaire</servlet-class>
+        <!--Un-comment  below line if you want to instantiate and initialize the servlet during the servlet-container(tomcat) startup-->
+        <!-- <load-on-startup>1</load-on-startup> -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/users/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet-mapping>
+        <servlet-name>Exchanges</servlet-name>
+        <url-pattern>/exchanges</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Exchanges</servlet-name>
+        <url-pattern>/exchanges/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Exchanges</servlet-name>
+        <url-pattern>/rates/*</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>ForumGest</servlet-name>
+        <url-pattern>/forum</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ForumGest</servlet-name>
+        <url-pattern>/forum/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForumGest</servlet-name>
+        <url-pattern>/forum/*/*</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
