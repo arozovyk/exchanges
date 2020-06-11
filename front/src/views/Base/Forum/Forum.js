@@ -48,14 +48,22 @@ class Forum extends Component {
           username: response.data.name,
           userId: response.data.idUser
         }));
+        this.forceUpdate()
         this.props.history.push(`/users/${response.data.idUser}` );
       }).catch(function (error) {
       console.log(error);
     });
     this.updaterRef.current.updateThreads();
 
+
+
   }
 
+
+  updateThreads=()=>{
+
+    this.forceUpdate()
+  }
 
   handleChange = async (event) => {
     const {target} = event;

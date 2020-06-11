@@ -28,24 +28,6 @@ class ForumSingle extends Component {
       forumMessage: {},
       correspondingResponses: [],
       tooltipOpen: [false, false],
-      tooltips: [
-        {
-          placement: 'top',
-          text: 'Top',
-        },
-        {
-          placement: 'bottom',
-          text: 'Bottom',
-        },
-        {
-          placement: 'left',
-          text: 'Left',
-        },
-        {
-          placement: 'right',
-          text: 'Right',
-        },
-      ],
     };
   }
 
@@ -76,7 +58,7 @@ class ForumSingle extends Component {
     });
 
   }
-
+  //submit response
   submitForm = async e => {
     console.log(this.props.username)
     e.preventDefault();
@@ -84,17 +66,20 @@ class ForumSingle extends Component {
       {fileId:this.props.match.params.id, userName: this.props.username, messageToSend: this.state.messageToSend})
       .then(response => {
         console.log(response.data);
+        //update responses
+        axios.get(`http://localhost:8080/ServletSample_war_exploded/forum/${this.props.match.params.id}/responses`).then(response => {
+          this.setState({correspondingResponses: response.data})
+          console.log("co"+ response.data);
+          alert("message has been sent")
+        }).catch(function (error) {
+          console.log(error);
+
+        });
       }).catch(function (error) {
       console.log(error);
     });
 
-    axios.get(`http://localhost:8080/ServletSample_war_exploded/forum/${this.props.match.params.id}/responses`).then(response => {
-      this.setState({correspondingResponses: response.data})
-      console.log("co"+ response.data);
-      alert("message has been sent")
-    }).catch(function (error) {
-      console.log(error);
-    });
+
 
   }
 
@@ -138,6 +123,7 @@ class ForumSingle extends Component {
               <CardBody>
                 <ListGroup>{this.state.correspondingResponses.map((rsp,index) =>
                   <ShowReponse key={index} id={rsp.response_id} author={rsp.authour} theMessage={rsp.message}/>
+                  //TODO Trouver une manière d'update Parent depuis SHowReponse
                 )}</ListGroup>
               </CardBody>
             </Card>

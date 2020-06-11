@@ -52,6 +52,14 @@ class ForumMessages extends Component {
   updateThreads=()=>{
     this.setState({forumUpdated:!this.state.forumUpdated});
     console.log("CHILD UPDATED")
+    axios.get('http://localhost:8080/ServletSample_war_exploded/forum', {
+      firstName: 'Fred',
+      lastName: 'Flintstone'
+    }).then(response => {
+      this.setState({forumMesages : response.data})
+      console.log(response.data);
+      //TODO UPDATE PARENT (Forum)
+    });
   }
 
   componentDidMount() {
