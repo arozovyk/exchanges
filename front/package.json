@@ -39,7 +39,7 @@
     "simple-line-icons": "^2.4.1"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "react-scripts": "^3.4.1",
     "universal-cookie": "^4.0.3"
   },
